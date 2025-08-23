@@ -32,7 +32,7 @@ MAX_RISK_PCT              = 0.05
 SIGNAL_STRENGTH_CAP       = 2.0
 
 # === Stop Time ===
-EOD_FLATTEN_HHMM_EST = (15, 15)
+EOD_FLATTEN_HHMM_EST = (15, 00)
 
 
 LOG_EVERY_X_SECS = 60
