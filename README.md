@@ -28,7 +28,7 @@ Unlike a mean-reversion strategy on individual tickers, this approach trades **r
 
 The automation is configured in `.github/workflows/main.yml`.
 
-- Add your Alpaca API keys as **GitHub Action secrets**
+- Add your Alpaca API keys as **GitHub Action secrets** on the **Repository Side** 
 - The workflow will execute trades automatically on your linked Alpaca account
 
 ## Installation
