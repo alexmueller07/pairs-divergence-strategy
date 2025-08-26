@@ -4,12 +4,16 @@ on:
   schedule:
     # Runs at 9:05 AM EST / 14:05 UTC, Monday–Friday
     - cron: '5 14 * * 1-5'
-  workflow_dispatch:  
+  workflow_dispatch:
 
 jobs:
   trade:
     runs-on: ubuntu-latest
     timeout-minutes: 360  # Max 6 hours
+
+    defaults:
+      run:
+        working-directory: pairs-divergence-strategy
 
     env:
       ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
