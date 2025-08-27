@@ -11,10 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 360  # Max 6 hours
 
-    defaults:
-      run:
-        working-directory: pairs-divergence-strategy
-
     env:
       ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
       ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
@@ -32,7 +28,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install -r pairs-divergence-strategy/requirements.txt
 
       - name: Run trading bot
-        run: python main.py
+        run: python pairs-divergence-strategy/main.py
